@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="452.0" prefWidth="790.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.javaFxSample.controller.LoginFormController">
+   <children>
+      <Label layoutX="484.0" layoutY="46.0" text="Login Form" textFill="#00adb5">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="84.0" endY="22.0" layoutX="321.0" layoutY="35.0" startX="84.0" startY="345.0" />
+      <Label layoutX="447.0" layoutY="142.0" text="User name" />
+      <Label layoutX="446.0" layoutY="212.0" text="Password" />
+      <Label layoutX="490.0" layoutY="378.0" text="Don't have an account?" />
+      <TextField fx:id="txtUserName" layoutX="447.0" layoutY="166.0" prefHeight="31.0" prefWidth="297.0" promptText="\@username123" style="-fx-background-radius: 10;" />
+      <JFXButton buttonType="RAISED" layoutX="476.0" layoutY="340.0" onAction="#btnLoginOnAction" prefHeight="24.0" prefWidth="246.0" style="-fx-background-radius: 25; -fx-background-color: #00ADB5;" text="Log in" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Hyperlink layoutX="648.0" layoutY="375.0" text="Sing up!" />
+      <PasswordField fx:id="txtPassword" layoutX="447.0" layoutY="235.0" prefHeight="31.0" prefWidth="297.0" promptText="password" style="-fx-background-radius: 10;" />
+      <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="148.0" layoutY="219.0">
+         <image>
+            <Image url="@../../../../../../Downloads/icons8-login-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="101.0" layoutY="77.0" style="-fx-background-color: #00ADB5;" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="141.0" text="Thogakade" textFill="#00adb5">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
